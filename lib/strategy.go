@@ -89,6 +89,12 @@ const (
 	// of all network packets. This simulates degradation of the EC2
 	// network. Requires SSH to be configured.
 	StrategyNetworkLoss Strategy = "NetworkLoss"
+
+	// StrategyKillEcs kills any docker containers programs it finds
+	// every second, simulating a docker container services, corrupted
+	// installation or faulty instance. 
+	// Requires SSH to be configured.
+	StrategyKillEcs Strategy = "KillEcs"
 )
 
 // Strategies is a list of default chaos strategies supported by Chaos Monkey.
@@ -108,4 +114,5 @@ var Strategies = []Strategy{
 	StrategyNetworkCorruption,
 	StrategyNetworkLatency,
 	StrategyNetworkLoss,
+	StrategyKillEcs,
 }
