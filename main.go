@@ -11,8 +11,8 @@ import (
 
 	"github.com/ryanuber/columnize"
 
-	"github.com/mlafeldt/chaosmonkey/aws"
-	chaosmonkey "github.com/mlafeldt/chaosmonkey/lib"
+	"github.com/FlyLevin/chaosmonkey/aws"
+	chaosmonkey "github.com/FlyLevin/chaosmonkey/lib"
 )
 
 func main() {
